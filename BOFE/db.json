@@ -1,0 +1,117 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "mariem",
+      "familyname": "kallel",
+      "phonenumber1": "24273205",
+      "phonenumberP": "20212223",
+      "adress": "abc",
+      "Date": "10112000",
+      "gender": "f",
+      "statue": "abc",
+      "level": "lycee",
+      "picture": null,
+      "subjects": [
+        "1",
+        "4"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "test",
+      "familyname": "test",
+      "phonenumber1": "24544728",
+      "phonenumberP": "20212217",
+      "adress": "megrine",
+      "Date": "2000-10-11",
+      "gender": "Femme",
+      "statue": "non reglé",
+      "level": "lycee",
+      "picture": null,
+      "subjects": [
+        "3"
+      ]
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "name": "ridha",
+      "familyname": "kallel",
+      "phonenumber": "24273205",
+      "adress": "abcdef",
+      "birthday": "10111965",
+      "gender": "h",
+      "subject": "technique"
+    },
+    {
+      "id": 2,
+      "name": "radhouan",
+      "familyname": "massmoudi",
+      "phonenumber": "99653147",
+      "adress": "abc",
+      "birthday": "10111980",
+      "gender": "h",
+      "subject": "math"
+    },
+    {
+      "id": "3",
+      "name": "samia",
+      "familyname": "gargouri",
+      "phonenumber": "24273205",
+      "adress": ",nbchj",
+      "birthday": "2000-10-11",
+      "gender": "Femme",
+      "subject": "francais"
+    },
+    {
+      "id": "5",
+      "name": "test",
+      "familyname": "test",
+      "phonenumber": "254225",
+      "adress": "fhfjh",
+      "birthday": "2021-07-19",
+      "gender": "Homme",
+      "subject": "Angalis"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "1",
+      "name": "technique",
+      "level": "2eme",
+      "classe": "l2cs2",
+      "teacher": "lobna",
+      "price": "50dt",
+      "isChecked": false
+    },
+    {
+      "id": "2",
+      "name": "python",
+      "level": "2eme",
+      "classe": "l2cs2",
+      "teacher": "amira",
+      "price": "100dt",
+      "isChecked": true
+    },
+    {
+      "id": "3",
+      "name": "data base",
+      "level": "3eme",
+      "classe": "l3cs1",
+      "teacher": "riadh",
+      "price": "10dt",
+      "isChecked": true
+    },
+    {
+      "id": "4",
+      "name": "philo",
+      "level": "bac",
+      "classe": "bac  lettre 5",
+      "teacher": "moustpha",
+      "price": "150dt",
+      "isChecked": true
+    }
+  ]
+}

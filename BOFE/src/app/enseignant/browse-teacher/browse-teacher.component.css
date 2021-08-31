@@ -1,0 +1,31 @@
+.container{
+    margin-top : 50px;
+}
+
+.niveau h6{
+    display: inline;}
+
+.niveau span{
+    color : blue;
+}
+.niveau a{
+    color : black;
+}
+.addbtn a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn-search , .btn-clear{
+    margin-top: 20px;
+}
+
+fa-icon {
+padding: 5px  ;
+}
+
+.btn-edit i {
+    color : white;
+}
+
+

@@ -1,0 +1,15 @@
+fieldset.scheduler-border {
+    padding-bottom: 1rem;   
+}
+
+.padd{
+    padding : 20px;
+}
+
+.content{
+    margin : 20px;
+}
+
+.form-switch{
+    font-size: 25px;
+}

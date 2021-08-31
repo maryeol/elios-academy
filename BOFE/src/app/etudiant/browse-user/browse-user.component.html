@@ -1,0 +1,91 @@
+<div class="container">
+    <div class="col-sm-12">
+        <div class="card-title">
+        <div class="row">
+            <div class=" col-6 d-flex justify-content-start">
+                <h5><i class="fa fa-fw fa-globe"></i> Browser User </h5>
+            </div>
+            <div class="addbtn col-6 d-flex justify-content-end">
+                <button class="btn btn-primary"><i class="fa fa-plus"></i> <a routerLink="add">Ajouter élève </a></button>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-9">
+            <h5 class="card-body"><i class="fa fa-fw fa-search"></i> Recherche </h5>
+            </div>
+            <div class="col-sm-3 niveau">
+                    <label>Tri par :</label>
+                    <a (click)="SearchLycee('lycee')" >lycee</a>
+                    <span>|</span>
+                    <a (click)="SearchCollege('college')">college</a>
+                    <span>|</span>
+                    <a (click)="SearchPrimaire('primaire')">primaire</a>
+            </div>
+        </div>
+        <form method="">
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="form-group">
+                        <label> matricule élève</label>
+                        <input type="text" class="form-control" name="marticule" [(ngModel)]="matricule" id="exampleInputmatricule" aria-describedby="MarticuleHelp" placeholder="Entrer marticule eleve">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <div class="btn-toolbar">
+                            <button type="submit" name="submit"  (click)="Search()"  value="search" id="submit" class="btn btn-search btn-primary"><i class="fa fa-fw fa-search"></i> Search</button>
+                            <button type="reset" name="clear" (click)="Reset()" value="clear" id="clear" class="btn btn-clear btn-warning"><i class="fa fa-fw fa-sync"></i> clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    
+    <div class="container">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr class="bg-primary text-white">
+                    <th class="text-center">Matricule</th>
+                    <th class="text-center">nom</th>
+                    <th class="text-center">prenom </th>
+                    <th class="text-center">numero de telephone</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+               <tr *ngIf="students.length==0">
+                    <td colspan="5" class="text-center">Aucun eleve</td>
+               </tr>
+                <tr *ngFor="let student of students | orderBy : key | paginate : {itemsPerPage : 3,currentPage:p };" (onDeleteStudent)="onDelete(student)">
+                    <td>{{student.id}}</td>
+                    <td>{{student.familyname}}</td>
+                    <td>{{student.name}}</td>
+                    <td>{{student.phonenumber1}}</td>
+                    <td align="center">
+                        <a [routerLink]="['update' , student.id] " ><i class="fa fa-eye"></i></a>
+                        <fa-icon (click)="onDelete(student)"
+                        [icon]="faTimes"
+                        [ngStyle] = "{'color' : 'red'}" 
+                            > Delete </fa-icon>  
+                    </td>
+                </tr>
+            </tbody>            
+        </table>
+        <div class="row">
+            <div class="col-sm-12 d-flex justify-content-end">
+                <pagination-controls (pageChange) ="p = $event" ></pagination-controls>
+            </div>
+        </div>
+        </div>
+        
+        
+        
+        
+        
+        
+    
+    

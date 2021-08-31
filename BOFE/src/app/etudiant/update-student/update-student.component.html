@@ -1,0 +1,103 @@
+<div class="container">
+    <div class="main-body">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="../../../assets/img/profilePictureStudent/{{student.name}} {{student.familyname}}.png" alt="picture from db" class="rounded-circle p-1 bg-primary" width="110">
+                            <div class="mt-3">
+                                <h4> {{student.name }} {{student.familyname }} </h4>
+                                <input type="button" routerLink="payment" name="gestionpaiement" value="gestion de paiement" class="btn btn-primary">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">ID</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input [(ngModel)]="student.id" name="id" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">nom</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input [(ngModel)]="student.familyname" name="familyname" type="text" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">prenom</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input [(ngModel)]="student.name" name="name"  type="text"  class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Numero telephone eleve</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input [(ngModel)]="student.phonenumber1" name="phonenumber1" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">Numero telephone parent</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            <input [(ngModel)]="student.phonenumberP" name ="phonenumberP" type="text" class="form-control" >
+                        </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">adresse</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input [(ngModel)]="student.adress" name ="adress" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">date de naissance</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input [(ngModel)]="student.Date" name ="Date" type="text"  class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">statue</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input [(ngModel)]="student.statue" name ="statue" type="text"  class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">niveau</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input [(ngModel)]="student.level" name ="level" type="text"  class="form-control">
+                            </div>
+                        </div>
+                        <div>
+                        <input type="button" (click)="onUpdate()" value="modifier eleve" class="btn btn-success" >
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

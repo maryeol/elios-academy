@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="main-body">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">ID</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input [(ngModel)]="subject.id" name="id" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">matiere</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input [(ngModel)]="subject.name" name="familyname" type="text" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">level</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input [(ngModel)]="subject.level" name ="adress" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">classe</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input [(ngModel)]="subject.classe" name ="classe" type="text"  class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">prof</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input [(ngModel)]="subject.teacher" name ="statue" type="text"  class="form-control" >
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">prix</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input [(ngModel)]="subject.price" name ="level" type="text"  class="form-control">
+                            </div>
+                        </div>
+                        <div>
+                        <input type="button" (click)="onUpdate()" value="modifier matiere" class="btn btn-success" >
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
