@@ -1,0 +1,93 @@
+<div class="container">
+    <div class="row">
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-6 offset-sm-2 offset-md-2 offset-lg-2 offset-xl-2 d-flex justify-content-start">
+        <form class="form-inline">
+            <fieldset>
+              <legend>Ajouter Enseignant </legend>
+              
+              <div class="form-group">
+                <label class="col-sm-5 col-form-label" for="exampleInputmatricule">Marticule</label>
+                <div class="col-sm-7">
+                <input type="text" class="form-control" name="marticule" [(ngModel)]="matricule" id="exampleInputmatricule" aria-describedby="MarticuleHelp" placeholder="Enter Marticule">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-5 col-form-label" for="exampleInputnom">Nom</label>
+                <div class="col-sm-7">
+                <input type="text" class="form-control" name="nom" [(ngModel)]="nom" id="exampleInputnom" aria-describedby="nomHelp" placeholder="Enter nom">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-5 col-form-label" for="exampleInputPrenom">Prenom</label>
+                <div class="col-sm-7">
+                <input type="text" class="form-control" name="prenom" [(ngModel)]="prenom" id="exampleInputPrenom" aria-describedby="PrenomHelp" placeholder="Enter Prenom">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label class="col-sm-5 col-form-label" for="exampleInputnumparent">numero telephone</label>
+                <div class="col-sm-7">
+                <input type="text" class="form-control" name="numerotelephone" [(ngModel)]="numerotelephone" id="exampleInputnumparent" aria-describedby="numparentHelp" placeholder="Enter numero parent ">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-5 col-form-label" for="exampleInputAdresse">Adresse</label>
+                <div class="col-sm-7">
+                <input type="text" class="form-control" name="adresse" [(ngModel)]="adresse" id="exampleInputAdresse" aria-describedby="AdresseHelp" placeholder="Enter Adresse">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-5 col-form-label" for="exampleInputdatenaiss">date de naissance</label>
+                <div class="col-sm-7">
+                <input type="date" class="form-control" name="datenaiss" [(ngModel)]="datenaiss" id="exampleInputdatenaiss" aria-describedby="datenaissHelp" placeholder="Enter date de naissance ">
+                </div>
+              </div>
+              <fieldset class="form-group">
+                  <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Sexe</legend>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" [(ngModel)]="sexe" id="gridRadios1" value="Homme" >
+                        <label class="form-check-label" for="gridRadios1">
+                          Homme
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" [(ngModel)]="sexe" id="gridRadios2" value="Femme">
+                        <label class="form-check-label" for="gridRadios2">
+                          Femme
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+              </fieldset>
+              <fieldset class="form-group">
+                <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Matiere</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                <select multiple="" class="form-control" id="exampleSelect1"  [(ngModel)]="matiere" (change)="selectChangeHandler($event)">
+                  <option><input type="checkbox" class="form-check-input" name="francais" id="optionsCheckBox1" value="francais" >  Francais  </option>
+                  <option><input type="checkbox" class="form-check-input" name="Angalis" id="optionsCheckBox2" value="Angalis" >  Angalis  </option>
+                  <option><input type="checkbox" class="form-check-input" name="math" id="optionsCheckBox3" value="math" >  math  </option>
+                  <option><input type="checkbox" class="form-check-input" name="Physique" id="optionsCheckBox4" value="Physique" >  Physique  </option>
+                  <option><input type="checkbox" class="form-check-input" name="programmation" id="optionsCheckBox5" value="programmation" >  programmation  </option>
+                </select>
+                </div>
+                </div>
+                </div>
+              </fieldset>
+              <div class="form-group">
+                <label for="exampleInputFile">Photo </label>
+                <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+              </div>
+              <div class="addbutton col-sm-12 d-flex justify-content-end">
+                <button (click)="saveTeacher()" class="btn btn-success">Ajouter Enseignant</button>
+              </div>
+            </fieldset>
+          </form>
+    </div>
+    </div>
+    </div>
+    
+    

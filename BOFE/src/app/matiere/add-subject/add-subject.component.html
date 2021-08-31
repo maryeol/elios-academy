@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class=" col-sm-6 col-md-6 col-lg-6 col-xl-6 offset-sm-2 offset-md-2 offset-lg-2 offset-xl-2 d-flex justify-content-start">
+        <form class="form-inline">
+            <fieldset>
+              <legend>Ajouter Matiere </legend>
+              
+              <div class="form-group">
+                <label class="col-sm-5 col-form-label" for="exampleInputId">ID</label>
+                <div class="col-sm-7">
+                <input type="text" class="form-control" name="id" [(ngModel)]="id" id="exampleInputId" aria-describedby="IdHelp" placeholder="Enter ID">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-5 col-form-label" for="exampleInputnom">Nom</label>
+                <div class="col-sm-7">
+                <input type="text" class="form-control" name="nom" [(ngModel)]="nom" id="exampleInputnom" aria-describedby="nomHelp" placeholder="Enter nom">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-5 col-form-label" for="exampleInputAdresse">Niveau</label>
+                <div class="col-sm-7">
+                <input type="text" class="form-control" name="niveau" [(ngModel)]="niveau" id="exampleInputNiveau" aria-describedby="NiveauHelp" placeholder="Enter Niveau">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-5 col-form-label" for="exampleInputclasse">classe</label>
+                <div class="col-sm-7">
+                <input type="text" class="form-control" name="classe" [(ngModel)]="classe" id="exampleInputclasse" aria-describedby="classeHelp" placeholder="Entrer classe ">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-5 col-form-label" for="exampleInputProf">prof</label>
+                <div class="col-sm-7">
+                <input type="text" class="form-control" name="prof" [(ngModel)]="prof" id="exampleInputProf" aria-describedby="NiveauHelp" placeholder="Entrer prof ">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-5 col-form-label" for="exampleInputprix">prix</label>
+                <div class="col-sm-7">
+                <input type="text" class="form-control" name="prix" [(ngModel)]="prix" id="exampleInputprix" aria-describedby="PrixHelp" placeholder="Entrer prix ">
+                </div>
+              </div>
+              <div class="addbutton col-sm-12 d-flex justify-content-end">
+                <button (click)="saveSubject()" class="btn btn-success">Ajouter Matiere</button>
+              </div>
+            </fieldset>
+          </form>
+    </div>
+    </div>
+    </div>
+    
+    
